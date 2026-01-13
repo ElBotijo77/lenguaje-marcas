@@ -53,6 +53,12 @@ body {
     /* Establece un borde sólido de 1 píxel con un color gris claro. */
     /* Agrega bordes redondeados a los campos de entrada. */
 
+input{
+    padding: 8px; 
+    border: 1px solid #8a7f7f; 
+    border-radius: 4px; 
+}
+
 #logIn input{
     flex: 2;
 }
@@ -64,6 +70,15 @@ textarea{
     flex: 2;    
 }
 
+/*Padding 0 para quitar el relleno que se crea por defecto y que todso tengan
+el mismo tamano*/
+
+#avatar{
+    flex: 2;
+    border: none;
+    padding: 0;
+}
+
 #enviar {
     cursor: pointer;
     transition: background-color 1s ease;
@@ -72,6 +87,12 @@ textarea{
     padding: 10px;/* Añade un relleno interno de 10 píxeles al botón de enviar. */
     border: none; /* Elimina el borde del botón de enviar. */
     border-radius: 4px; /* Agrega bordes redondeados al botón de enviar. */
+}
+
+/*Marca el input invalido con el color rojo cuando tiene el foco*/
+
+input:focus:invalid {
+    border: 2px solid red; /* Establece un borde rojo de 2 píxeles para los campos de entrada inválidos. */
 }
 
 

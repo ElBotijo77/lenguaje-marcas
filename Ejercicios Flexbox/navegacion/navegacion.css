@@ -1,34 +1,40 @@
-nav {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    max-height: 200px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 18px;
-    
-    color: white;
-    background-color: #333;
-
-    flex-wrap: wrap;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-
-ul{
+nav{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    font-family: "Orbitron", sans-serif;
+    color: white;    
+    font-size: 1.75rem;
+    background-color: black;
+    border-bottom: 3px solid midnightblue;
+    width: 100%;
 }
 
 #enlaces{
-    text-decoration: none;
-    padding: 10px;
+    display: flex;
+    padding: 1%;
+    list-style: none;
 }
 
-#enlaces a{
-    color: white;
+a{
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    margin-right: 20px;
 }
 
 #rrss{
-    background-color: aqua;
+    display: flex;
+    padding: 0.5rem;
+    align-content: center;
+    background-color: midnightblue;
+    padding: 15px;
+
+    list-style: none;
 }
