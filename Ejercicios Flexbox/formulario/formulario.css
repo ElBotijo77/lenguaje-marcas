@@ -6,36 +6,46 @@
 /* Configuración general para el cuerpo del documento */
 
 body {
-    background-image: url('imagen'); /* Cambia 'imagen' por la URL de tu imagen */
-    background-repeat:repeat; /*puede dejarlo o no */
-     /* Selecciona la fuente 'Roboto' o una fuente sans-serif genérica para el texto del cuerpo. */
+    background-image: url(../planetas/assets/img/venus.jpg); /* Cambia 'imagen' por la URL de tu imagen */
+    background-repeat:repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif; /*puede dejarlo o no */
+    font-size: 1rem;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  /* Selecciona la fuente 'Roboto' o una fuente sans-serif genérica para el texto del cuerpo. */
      /* Establece el tamaño de fuente a 1 rem*/
 }
 
 #contenedor {
-     /* Establece el ancho del contenedor principal al 40% del ancho del contenedor padre. */
-    /* Establece el ancho mínimo del contenedor principal en 500 píxeles. */
-    /* Establece un fondo blanco semi-transparente utilizando valores RGBA. */
-    /* Agrega bordes redondeados al contenedor principal de 8px en todos los lados. */
+    width: 40%; /* Establece el ancho del contenedor principal al 40% del ancho del contenedor padre. */
+    min-width: 500px;/* Establece el ancho mínimo del contenedor principal en 500 píxeles. */
+    background-color: rgb(255, 255, 255, 0.5);/* Establece un fondo blanco semi-transparente utilizando valores RGBA. */
+    border-radius: 8px;/* Agrega bordes redondeados al contenedor principal de 8px en todos los lados. */
 }
 
 #formWrapper {
-   /* Añade un relleno interno de 20 píxeles al contenedor del formulario. */
+    padding: 20px; /* Añade un relleno interno de 20 píxeles al contenedor del formulario. */
 }
 
 #logIn {
-    /* Establece su disposicion flexible y que su direccion principal en columna */
+    display: flex;
+    flex-direction: column; /* Establece su disposicion flexible y que su direccion principal en columna */
 }
 
 #logIn > div {
-   /* Agrega un margen inferior de 15 píxeles entre cada div dentro del formulario. */
-    /* Establece su disposicion flexible y que sus elementos esten centrados verticalmente*/
+    margin-bottom: 15px; /* Agrega un margen inferior de 15 píxeles entre cada div dentro del formulario. */
+    display: flex;
+    align-items: center; /* Establece su disposicion flexible y que sus elementos esten centrados verticalmente*/
 }
 
 #logIn label {
     flex: 1;/* Dispone a todos los elementos para que empiecen desde igual posicion */
-    /* Establece un peso de fuente de 700 para las etiquetas del formulario. */
-    /* Agrega un margen derecho de 10 píxeles a las etiquetas del formulario. */
+    font-weight: 700;/* Establece un peso de fuente de 700 para las etiquetas del formulario. */
+    margin-right: 10px; /* Agrega un margen derecho de 10 píxeles a las etiquetas del formulario. */
 }
 
 /* Estilo para los campos de entrada del formulario */
@@ -57,13 +67,17 @@ textarea{
 #enviar {
     cursor: pointer;
     transition: background-color 1s ease;
-    /* Establece el color de fondo del botón de enviar a verde. */
-    /* Establece el color del texto del botón de enviar a blanco. */
-    /* Añade un relleno interno de 10 píxeles al botón de enviar. */
-    /* Elimina el borde del botón de enviar. */
-    /* Agrega bordes redondeados al botón de enviar. */
+    background-color: green;/* Establece el color de fondo del botón de enviar a verde. */
+    color: white;/* Establece el color del texto del botón de enviar a blanco. */
+    padding: 10px;/* Añade un relleno interno de 10 píxeles al botón de enviar. */
+    border: none; /* Elimina el borde del botón de enviar. */
+    border-radius: 4px; /* Agrega bordes redondeados al botón de enviar. */
 }
 
+
+#enviar:hover {
+    background-color: blue;
+}
 
 /* Estilo para el botón de enviar al pasar el ratón sobre él */
       /* Cambia el color de fondo del botón de enviar a azul al pasar el ratón sobre él. */
