@@ -1,0 +1,40 @@
+/*Todos los elemenetos individuales o colectivos que no sean cajas,
+imagenes, o fuentes se manejarán aqui. Por ejemplo los botones,
+elementos de una lista, etc*/
+
+/*Creacion del Header*/
+
+.nav-header ul{
+    font-family: var(--font-macondo);
+    font-size: 1.7rem;
+    font-weight: 700;
+
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+/*Quitamos la decoración de los enlaces*/
+
+.nav-header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#form-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-header label{
+    font-family: var(--font-macondo);
+    font-style: italic;
+    font-weight: 500;
+}
+
+#form-header input{
+    width: 60%;
+}
