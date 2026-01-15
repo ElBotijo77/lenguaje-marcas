@@ -13,6 +13,8 @@ libros
 :root{
     margin: 0;
     padding: 0;
+    background-color: rgb(255, 250, 244);
+    font-family: var(--lora-regular);
 
     --font-macondo: 'Macondo', sans-serif, cursive;
     --lora-regular: 'Lora', serif;

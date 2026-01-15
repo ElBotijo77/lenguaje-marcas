@@ -3,9 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Details-table</title>
 </head>
 <body>
+    <!-- Navegación de la página -->
+
+    <div class="nav-gallery">
+        <div class="back-button">
+            <a href="../index.html"><img class="small-icon" src="../assets/icon/back-arrow.png" alt="back"></a>
+        </div>
+        <div class="title">Tabla con información detallada</div>
+    </div>
+
+    <!-- Tabla con información de los libros -->
+
+    <table class="table">
+        <thead>
+            <!-- Encabezado de la tabla -->
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Género</th>
+                <th>Descripción</th>
+                <th>Páginas</th>
+                <th>Portada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de la tabla -->
+                        <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>Distopía</td>
+                <td>Un hombre desafía un régimen totalitario que controla pensamiento, lenguaje y memoria colectiva.</td>
+                <td>328</td>
+                <td class="no-padding"><img src="../assets/books/cover/1984.jpg" alt="George Orwell"></td>
+            </tr>
+            <tr>
+                <td>Cien años de soledad</td>
+                <td>G. G. Márquez</td>
+                <td>Realismo mágico</td>
+                <td>La historia de varias generaciones marcadas por el amor, la soledad y lo mágico.</td>
+                <td>496</td>
+                <td><img src="../assets/books/cover/cien-anos-de-soledad.jpg" alt="G. G. Márquez"></td>
+            </tr>
+            <tr>
+                <td>Dune</td>
+                <td>Frank Herbert</td>
+                <td>Ciencia ficción</td>
+                <td>Luchas políticas, religión y ecología en un desierto donde se decide el destino del imperio.</td>
+                <td>688</td>
+                <td><img src="../assets/books/cover/dune.jpg" alt="Frank Herbert"></td>
+            </tr>
+            <tr>
+                <td>Lector de cadáveres*</td>
+                <td>Antonio Garrido</td>
+                <td>Histórica</td>
+                <td>Un joven con talento médico investiga muertes en la China medieval enfrentando poder y superstición.</td>
+                <td>512</td>
+                <td><img src="../assets/books/cover/lector-cadaveres.jpg" alt="Antonio Garrido"></td>
+            </tr>
+            <tr>
+                <td>Nombre del viento*</td> 
+                <td>Patrick Rothfuss</td>
+                <td>Fantasía</td>
+                <td>Un músico prodigioso narra su vida entre magia, tragedia y la construcción de una leyenda.</td>
+                <td>880</td>
+                <td><img src="../assets/books/cover/nombre-viento.jpg" alt="Patrick Rothfuss"></td>
+            </tr>
+            <tr>
+                <td>Hyperion</td>
+                <td>Dan Simmons</td>
+                <td>Ciencia ficción</td>
+                <td>Siete viajeros cuentan sus historias mientras una amenaza divina redefine el futuro humano.</td>
+                <td>496</td>
+                <td><img src="../assets/books/cover/hyperion.jpg" alt="Dan Simmons"></td>
+            </tr>
+            <tr>
+                <td>Hyperion 2, La caida</td>
+                <td>Dan Simmons</td>
+                <td>Ciencia ficción</td>
+                <td>Las consecuencias del viaje revelan conspiraciones, guerras y el verdadero destino de la humanidad.</td>
+                <td>528</td>
+                <td><img src="../assets/books/cover/hyperion2.jpg" alt="Dan Simmons"></td>
+            </tr>
+            <tr>
+                <td>Catedral del mar*</td>
+                <td>Ildefonso Falcones</td>
+                <td>Histórica</td>
+                <td>Un siervo lucha por su libertad mientras Barcelona levanta una catedral en la Edad Media.</td>
+                <td>672</td>
+                <td><img src="../assets/books/cover/catedral-mar.jpg" alt="Ildefonso Falcones"></td>
+            </tr>
+            <tr>
+                <td>Sombra del viento*</td>
+                <td>Carlos Ruiz Zafón</td>
+                <td>Misterio</td>
+                <td>Un joven descubre un libro maldito que lo arrastra a secretos del pasado.</td>
+                <td>576</td>
+                <td><img src="../assets/books/cover/sombra-viento.jpg" alt="Carlos Ruiz Zafón"></td>
+            </tr>
+            <tr>
+                <td>Mitos de Cthulhu*</td>
+                <td>H. P. Lovecraft</td>
+                <td>Terror cósmico</td>
+                <td>Relatos de horrores cósmicos donde la humanidad es insignificante frente a dioses antiguos.</td>
+                <td>400</td>
+                <td><img src="../assets/books/cover/cthulhu.jpg" alt="H. P. Lovecraft"></td>
+            </tr>
+            <tr>
+                <td>Pilares de la tierra*</td>
+                <td>Ken Follett</td>
+                <td>Histórica</td>
+                <td>Ambición, amor y traición alrededor de la construcción de una catedral medieval.</td>
+                <td>1040</td>
+                <td><img src="../assets/books/cover/pilares-tierra.jpg" alt="Ken Follett"></td>
+            </tr>
+            <tr>
+                <td>Oliver Twist</td>
+                <td>Charles Dickens</td>
+                <td>Clásico</td>
+                <td>Un huérfano sobrevive a la miseria londinense enfrentando crimen, injusticia y compasión.</td>
+                <td>384</td>
+                <td><img src="../assets/books/cover/oliver-twist.jpg" alt="Charles Dickens"></td>
+            </tr>
+            <tr>
+                <td colspan="6"><i><b>Nota: </b>Los articulos "el", "la", "los" y "las" se han eliminado para una mejor lectura. Marcado con <b>asterisco*</b></i></td>
+            </tr>
+        </tbody>
+    </table>
+
     
 </body>
 </html>
+
+
+<!--------------------------Informacion para añadir en la tabla---------------------------
+| Título                   | Autor              | Género          | Descripción (≤20 palabras)                                                                           | Páginas |
+| ------------------------ | ------------------ | --------------- | ---------------------------------------------------------------------------------------------------- | ------- |
+| 1984                     | George Orwell      | Distopía        | Un hombre desafía un régimen totalitario que controla pensamiento, lenguaje y memoria colectiva.     | 328     |
+| Cien años de soledad     | G. G. Márquez      | Realismo mágico | La historia de varias generaciones marcadas por el amor, la soledad y lo mágico.                     | 496     |
+| Dune                     | Frank Herbert      | Ciencia ficción | Luchas políticas, religión y ecología en un desierto donde se decide el destino del imperio.         | 688     |
+| El lector de cadáveres   | Antonio Garrido    | Histórica       | Un joven con talento médico investiga muertes en la China medieval enfrentando poder y superstición. | 512     |
+| El nombre del viento     | Patrick Rothfuss   | Fantasía        | Un músico prodigioso narra su vida entre magia, tragedia y la construcción de una leyenda.           | 880     |
+| Hyperion                 | Dan Simmons        | Ciencia ficción | Siete viajeros cuentan sus historias mientras una amenaza divina redefine el futuro humano.          | 496     |
+| Hyperion 2               | Dan Simmons        | Ciencia ficción | Las consecuencias del viaje revelan conspiraciones, guerras y el verdadero destino de la humanidad.  | 528     |
+| La catedral del mar      | Ildefonso Falcones | Histórica       | Un siervo lucha por su libertad mientras Barcelona levanta una catedral en la Edad Media.            | 672     |
+| La sombra del viento     | Carlos Ruiz Zafón  | Misterio        | Un joven descubre un libro maldito que lo arrastra a secretos del pasado.                            | 576     |
+| Los mitos de Cthulhu     | H. P. Lovecraft    | Terror cósmico  | Relatos de horrores cósmicos donde la humanidad es insignificante frente a dioses antiguos.          | 400     |
+| Los pilares de la tierra | Ken Follett        | Histórica       | Ambición, amor y traición alrededor de la construcción de una catedral medieval.                     | 1040    |
+| Oliver Twist             | Charles Dickens    | Clásico         | Un huérfano sobrevive a la miseria londinense enfrentando crimen, injusticia y compasión.            | 384     |
+->

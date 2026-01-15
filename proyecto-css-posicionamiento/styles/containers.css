@@ -15,3 +15,26 @@ mediante flex o grid cuando sea conveniente*/
     border-bottom: 4px solid rgb(200, 162, 109);
     background-color: rgb(252, 237, 214);
 }
+
+.nav-gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.table{
+    border: 2px solid rgb(200, 162, 109);
+    border-collapse: separate;
+    border-radius: 4px;
+    align-content: center;
+    font-size: 1.25rem;
+
+    th, td{
+        width: 20%;
+        border: 1.5px solid rgb(200, 162, 109);
+        padding: 10px;
+        text-align: center;
+    }
+}
