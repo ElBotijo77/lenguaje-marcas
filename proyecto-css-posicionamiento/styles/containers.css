@@ -24,6 +24,17 @@ mediante flex o grid cuando sea conveniente*/
     gap: 20px;
 }
 
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+    background: #d3dde3;
+    background: linear-gradient(326deg, rgba(211, 221, 227, 1) 0%, rgba(242, 234, 143, 0.53) 30%, rgba(255, 255, 247, 1) 82%, rgba(255, 255, 255, 1) 100%);
+
+    gap: 10px;
+}
+
 .table{
     border: 2px solid rgb(200, 162, 109);
     border-collapse: separate;
@@ -37,4 +48,9 @@ mediante flex o grid cuando sea conveniente*/
         padding: 10px;
         text-align: center;
     }
+}
+
+.backgorud-gallery{
+    background: #d3dde3;
+    background: linear-gradient(326deg, rgba(211, 221, 227, 1) 0%, rgba(242, 234, 143, 0.53) 30%, rgba(255, 255, 247, 1) 82%, rgba(255, 255, 255, 1) 100%);
 }
