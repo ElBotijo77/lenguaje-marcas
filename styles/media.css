@@ -19,7 +19,9 @@ table img{
 }
 
 .gallery img{
-    width: 250px;
-    height: 320px;
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+    min-height: 250px;
     border-radius: 2px;
 }

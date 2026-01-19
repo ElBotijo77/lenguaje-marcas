@@ -24,16 +24,43 @@ mediante flex o grid cuando sea conveniente*/
     gap: 20px;
 }
 
+/*Para tener el diseño responsivo de mantener una rejilla 2x6 inicial  sin 
+utilizar un display: flex con la propiedad wrap, utilizaremos media queries
+para tener un control absoluto del comportamiento. De esta manera le decimos
+exactamente en que punto debe dividirse y que tiene que hacer cuando esto 
+suceda.*/
+
 .gallery{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+
+    row-gap: 50px;
     
     background: #d3dde3;
     background: linear-gradient(326deg, rgba(211, 221, 227, 1) 0%, rgba(242, 234, 143, 0.53) 30%, rgba(255, 255, 247, 1) 82%, rgba(255, 255, 255, 1) 100%);
-
-    gap: 10px;
 }
+
+/*Si la ventana baja de 1500px, la rejilla se tranforma en 5 columnas y asi
+secesivamente con las siguientes declaraciones*/
+
+@media (max-width: 1500px) {
+    .gallery {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 .table{
     border: 2px solid rgb(200, 162, 109);

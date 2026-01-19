@@ -54,3 +54,13 @@ elementos de una lista, etc*/
 .no-padding{
     padding: 0;
 }
+
+/*Establecemos el estilo de la leyenda de las imagenes en galeria*/
+
+.leyenda{
+    text-align: center;
+    font-family: var(--font-macondo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+}
