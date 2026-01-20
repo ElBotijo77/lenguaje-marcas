@@ -39,6 +39,18 @@ elementos de una lista, etc*/
 .submit-button{
     font-family: var(--font-macondo);
     grid-column: 1/3;
+    transition: box-shadow 0.3s ease;
+}
+
+.submit-button:hover{
+    color: rgb(255, 248, 220);
+    box-shadow: 4px 2px 4px rgba(140, 137, 132, 0.405);
+}
+
+/*Coloreamos las filas pares de distinto color*/
+
+tr:nth-child(even) {
+    background-color: #f9eebf; 
 }
 
 /*Establecemos que aspecto tendrá los titulos*/
@@ -50,11 +62,6 @@ elementos de una lista, etc*/
 
     color: rgb(160, 147, 128);
 }
-
-.no-padding{
-    padding: 0;
-}
-
 /*Establecemos el estilo de la leyenda de las imagenes en galeria*/
 
 .leyenda{
@@ -65,14 +72,46 @@ elementos de una lista, etc*/
     font-style: italic;
 }
 
-/*Modificamos el formato del texto en la pestana info*/
+/*Modificamos el formato del texto y la imagen en la pagina info*/
 
 .info{
     font-weight:450;
     font-size: 1.2rem;
+    text-align: justify;
     padding: 40px 70px 0 70px;
 
     .title{
         font-size: 2.5rem;
     }
+}
+
+.figure figcaption{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-macondo);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.info-details{
+    font-family: var(--font-lora);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.text-summary{
+    font-family: var(--font-macondo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: chocolate;
+    cursor: pointer;
+}
+
+.sub-info{
+    margin: 10px 15px 10px 15px;
+}
+
+.figure figcaption.small-letter {
+    font-size: 1.1rem; 
+    font-weight: 560;
 }
