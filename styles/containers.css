@@ -74,6 +74,15 @@ secesivamente con las siguientes declaraciones*/
         width: 20%;
         border: 1.5px solid rgb(200, 162, 109);
         text-align: center;
+        transition: ease all 0.5s;
+    }
+
+    tr:nth-child(odd) td:hover { 
+        background-color: #f9eebf; 
+    }
+
+    tr:nth-child(even) td:hover { 
+        background-color: rgb(255, 249, 241);     
     }
 }
 
@@ -91,6 +100,3 @@ secesivamente con las siguientes declaraciones*/
     float: right;
     margin: 0px 50px 25px 100px;
 }
-
-
-

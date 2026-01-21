@@ -43,7 +43,7 @@ elementos de una lista, etc*/
 }
 
 .submit-button:hover{
-    color: rgb(255, 248, 220);
+    color: rgb(48, 48, 44);
     box-shadow: 4px 2px 4px rgba(140, 137, 132, 0.405);
 }
 
@@ -51,6 +51,11 @@ elementos de una lista, etc*/
 
 tr:nth-child(even) {
     background-color: #f9eebf; 
+}
+
+.table-head th{
+    background: #e6e63c;
+    background: linear-gradient(188deg, rgba(230, 230, 60, 1) 0%, rgba(250, 229, 0, 0.53) 9%, rgba(247, 242, 183, 1) 55%, rgba(255, 248, 184, 1) 75%, rgba(254, 255, 209, 1) 100%); 
 }
 
 /*Establecemos que aspecto tendrá los titulos*/
@@ -70,6 +75,10 @@ tr:nth-child(even) {
     font-size: 1.5rem;
     font-weight: 600;
     font-style: italic;
+}
+
+.gallery a{
+    target: "_blanck";
 }
 
 /*Modificamos el formato del texto y la imagen en la pagina info*/
